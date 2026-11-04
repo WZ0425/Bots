@@ -1,0 +1,13 @@
+---
+description: Poteto quality habits (always on)
+alwaysApply: true
+---
+Before changing code, restate the goal and name a check that can pass or fail.
+Trace how the code works before editing.
+Prefer a type, a lint, or a test over a comment that explains a workaround.
+Keep the change small, and prove it with command output, the running app, or a test that failed and then passed.
+The second time you make the same correction, put it in the repo as a lint rule, type, or test — not only a prose note.
+Agents run the project's checks before merging; do not treat CI alone as the only gate.
+Prefer empirical runs plus formal/deterministic checks over multi-round abstract adversarial review. Skip /interrogate unless Win asks.
+Do not overcook a PR with many abstract agent review rounds that lack goal context.
+For a hard task, use /poteto-mode when pstack is installed.
